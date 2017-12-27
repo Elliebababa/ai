@@ -6,6 +6,8 @@ Evaluation function two (h2) calculates the number of the mis-placed digits.
 In order to compare the efficiency of the two algorithm better, the program displays related variables of two evaluation functions,
 and use two thread to run the two function at concurrently to have a look at the speed difference between them.
 
+ps. the cantor algorithm and the priority queue are used to improve the program.
+
 A description of the UI.
 The left hand side shows some related variables of the two evaluation functions, including #nodes in open list, #total nodes, the value of the least node.
 (Thus it will always be zero at the end of the search.)
@@ -22,6 +24,10 @@ the initial state and the final state of the problem, as well as the best path t
 评估函数2（h2）为计算错位数码的个数。
 为了能更好的将两个算法的效率进行比较，程序中将两种评估函数搜索过程相关的变量展现出来，
 并利用了两个线程同时运行两个算法以比较算法的速度。
+
+程序细节：
+open表节点排序采用了优先级队列，按照节点的评估值+深度进行排序。
+表的存储采用了康托展开将数码序列转化为对应的编码再用哈希列表进行存储，加快了搜索的速度。
 
 程序的界面说明：
 界面的左侧分别显示h1和h2两个评估函数的搜索效果。
