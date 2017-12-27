@@ -16,6 +16,16 @@ The right hand side includes, from top to bottom, the buttons controlling start 
 the initial state and the final state of the problem, as well as the best path to solve the problem.
 
 ------------------------------
+文件说明：
+DigitWrapper--程序运行的主文件
+DigitUI.py--程序界面文件
+EightDigit--实现八数码问题的文件
+NineDigit--实现九数码问题的文件
+cantor.py--实现康托展开的文件
+
+运行说明：
+运行DigitWrapper.py
+
 
 程序说明：
 程序采用A*算法解决八数码问题，然后用相同的评估函数解决九数码问题。
